@@ -1,7 +1,5 @@
-# Djangop Little Lemon
-# https://www.coursera.org/learn/django-web-framework/peer/68wd1/peer-review-rubric-design-and-build-a-simple-django-app
-
-## Restaurant Menu Django App
+# Djangop Little Lemon: Restaurant Menu App
+#### https://www.coursera.org/learn/django-web-framework/peer/68wd1/peer-review-rubric-design-and-build-a-simple-django-app
 
 This code outlines the steps to create a simple menu page for a restaurant website using Django.
 
