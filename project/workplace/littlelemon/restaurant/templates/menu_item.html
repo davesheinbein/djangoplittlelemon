@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Menu Item</h2>
+<div>
+    <a href="{% url 'home' %}">Home</a> /
+    <a href="{% url 'menu' %}">Menu</a> /
+    {{ menu_item.name }}
+</div>
+
+    {% if menu_item %}
+        <li class="item">
+            <div class="item-data item-left">
+                <h1 class="item-data-name">{{ menu_item.name }}</h1>
+                <br />
+                <div class="item-data-description">{{ menu_item.description }}</div>
+                <div class="item-data-price">Price: ${{ menu_item.price }}</div>
+            </div>
+            <div class="item-data item-right">
+                {% if menu_item.image_url %}
+                <img src="{{ menu_item.image_url }}" alt="{{ menu_item.name }}" class="item-image">
+                <br />
+                {% endif %}
+            </div>
+        </li>
+    {% else %}
+    <p>No menu item found.</p>
+    {% endif %}
+{% endblock %}
